@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final project Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+    <style>
+        .offerings {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    background-color: #f4f4f4; /* Light background for contrast */
+    padding: 40px; /* Space inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px 0; /* Space above and below the section */
+    justify-content: space-evenly; /* Space between text and image */
+    height: auto;
+}
+
+/* Heading style */
+.offerings h2 {
+    font-size: 2.5em; /* Larger font size */
+    color: #333; /* Darker text color */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Paragraph style */
+.offerings p {
+    font-size: 1.2em; /* Slightly larger text */
+    color: #000; /* Black text */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+/* List style */
+.offerings ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+    max-width: 600px; /* Limit the width of the list */
+    margin: 0; /* No margin */
+}
+
+/* List item style */
+.offerings li {
+    color: #000; /* Black text */
+    background-color: #fff; /* White background for each item */
+    padding: 15px; /* Space inside each item */
+    border-radius: 5px; /* Rounded corners for list items */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 10px 0; /* Space between items */
+    transition: transform 0.3s; /* Smooth scaling transition */
+}
+
+/* Hover effect for list items */
+.offerings li:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.of-images img {
+    max-width: 560px; /* Limit image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px; /* Rounded corners for images */
+    margin-left: 20px; /* Space between text and image */
+    height: 400px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1000px) {
+    .offerings {
+        flex-direction: column; /* Stack items vertically */
+        padding: 20px; /* Less padding for smaller screens */
+    }
+
+    .of-images img {
+       display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .offerings h2 {
+        font-size: 2em; /* Smaller heading */
+    }
+
+    .offerings p {
+        font-size: 1.1em; /* Smaller paragraph text */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .offerings h2 {
+        font-size: 1.8em; /* Further reduce heading size */
+    }
+
+    .offerings p,
+    .offerings li {
+        font-size: 1em; /* Smaller text */
+    }
+
+    .offerings {
+        padding: 15px; /* Reduce padding */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .offerings h2 {
+        font-size: 1.5em; /* Smaller heading for mobile */
+    }
+
+    .offerings li {
+        padding: 10px; /* Less padding */
+    }
+
+    .of-images img {
+        height: auto; /* Maintain aspect ratio */
+        margin-left: 0; /* Remove left margin */
+        margin-top: 20px; /* Add top margin for spacing */
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .offerings {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .offerings h2 {
+        font-size: 1.4em; /* Even smaller heading */
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .offerings h2 {
+        font-size: 1.2em; /* Minimal heading size */
+    }
+
+    .offerings p {
+        font-size: 0.9em; /* Smaller paragraph */
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .offerings h2 {
+        font-size: 1em; /* Smallest heading size */
+    }
+
+    .offerings p,
+    .offerings li {
+        font-size: 0.8em; /* Smallest text size */
+    }
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+          <img src="logo.jpg" alt="Logo" style="max-width: 50px;">
+        </div>
+        <nav>
+          <button class="burger" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul>
+            <li><a href="index1.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skill.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+<div class="offerings">
+    <div>
+        <h2>What We Offer</h2>
+        <p>Our programming services include:</p>
+        <ul>
+            <li>Custom Software Development</li>
+            <li>API Integration</li>
+            <li>Mobile App Development</li>
+            <li>Database Management</li>
+            <li>Automation and Scripting</li>
+        </ul>
+        
+            <button class="read-more"><a href="index1.html">Back</a></button>
+            <button class="read-more"><a href="contact.html">Contact Us</a></button>
+        </ul>
+    </div>
+    <div class="of-images">
+        <img src="prog.jpg" alt="Web Development">
+        <br>
+       
+    </div>
+</div>
+
+<footer class="footer">
+    &copy; 2024, CTU-Consolacion.
+</footer>
+</body>
+</html>
+<script>
+    const burger = document.querySelector('.burger');
+    const navMenu = document.querySelector('nav ul');
+  
+    burger.addEventListener('click', () => {
+        navMenu.classList.toggle('active'); // Toggle the menu
+    });
+  </script>
+  

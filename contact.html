@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final project Portfolio</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous">
+  
+  <style>
+ /* General Contact Section Styling */
+.contact.section {
+    padding: 50px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.section__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.section__subtitle {
+    font-size: 1.2rem;
+    color: #bbb;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.contact__content {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact__info, .contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact__card {
+    background-color: #252525;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #ddd;
+}
+
+.contact__card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact__form-input, .contact__form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+}
+
+.button {
+    padding: 1rem 2rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact.section {
+        padding: 30px 5%;
+    }
+
+    .section__title {
+        font-size: 1.5rem;
+    }
+
+    .contact__form-div textarea {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact.section {
+        padding: 20px 3%;
+    }
+
+    .section__title {
+        font-size: 1.2rem;
+    }
+
+    .contact__card, .contact__content {
+        padding: 1rem;
+    }
+
+    .contact__form-input, .contact__form textarea {
+        padding: 0.8rem;
+    }
+
+    .button {
+        width: 100%;
+        padding: 0.8rem;
+    }
+}
+
+
+   </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+          <img src="logo.jpg" alt="Logo" style="max-width: 50px;">
+        </div>
+        <nav>
+          <button class="burger" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul>
+            <li><a class="active" href="index1.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skill.html">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+  <!--=============== CONTACT ===============-->
+  <section class="contact section" id="contact">
+    <sapn class="section__subtitle">Get in touch</sapn>
+    <h3 class="section__title">Contact Me</h3>
+
+    <div class="contact__container container grid">
+        <div class="contact__content">
+            <h3 class="contact__title contact__title-info">Talk to me</h3>
+
+            <div class="contact__info">
+                <div class="contact__card">
+                    <i class="fas fa-envelope contact__card-icon"></i>
+                    <h3 class="contact__card-title">Email</h3>
+                    <span class="contact__card-data">winron1layera@gmail.com</span>
+            
+                    <a href="mailto:winron1layera@gmail.com" target="_blank" class="contact__button">
+                        Write Me <i class="fas fa-arrow-right contact__button-icon"></i>
+                    </a>
+                </div>
+            
+                <div class="contact__card">
+                    <i class="fab fa-whatsapp contact__card-icon"></i>
+                    <h3 class="contact__card-title">Whatsapp</h3>
+                    <span class="contact__card-data">09703694524</span>
+            
+                    <a href="#" target="_blank"
+                        class="contact__button">
+                        Write Me <i class="fas fa-arrow-right contact__button-icon"></i>
+                    </a>    
+                </div>
+            
+                <div class="contact__card">
+                    <i class="fab fa-instagram-square contact__card-icon"></i>
+                    <h3 class="contact__card-title">instagram</h3>
+                    <span class="contact__card-data">Que.Chester</span>
+            
+                    <a href="https://www.instagram.com/que.chester/" target="_blank" class="contact__button">
+                        Write Me <i class="fas fa-arrow-right contact__button-icon"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="contact__content">
+            <h3 class="contact__title contact__title-form">Write Me your Message</h3>
+
+            <form action="" class="contact__form">
+                <div class="contact__form-div">
+                    <label for="" class="contact__form-tag">Name</label>
+                    <input type="text" placeholder="Enter name" class="contact__form-input">
+                </div>
+
+                <div class="contact__form-div">
+                    <label for="" class="contact__form-tag">Mail</label>
+                    <input type="text" placeholder="Enter email" class="contact__form-input">
+                </div>
+
+                <div class="contact__form-div contact__form-area">
+                    <label for="" class="contact__form-tag">Message</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Write your Message"
+                        class="contact__form-input "></textarea>
+                </div>
+
+
+                <button class="button">
+                    Send Message
+                </button>
+            </form>
+
+        </div>
+
+</section>
+</main>
+
+<footer class="footer">
+    &copy; 2024, CTU-consolacion.
+</footer>
+</body>
+</html>
+    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="scripts.js"></script>
+<script>
+    const burger = document.querySelector('.burger');
+    const navMenu = document.querySelector('nav ul');
+  
+    burger.addEventListener('click', () => {
+        navMenu.classList.toggle('active'); // Toggle the menu
+    });
+  </script>
+  

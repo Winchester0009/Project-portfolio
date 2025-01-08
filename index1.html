@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final project Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous">
+   <link rel="stylesheet" href="css.css">
+  
+</head>
+<style>
+  #home {
+    padding: 60px 20px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .home-header h1 {
+    font-size: 4.1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #a88df5;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+
+  .home-header p {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ddd;
+  }
+/* Responsive Fonts */
+@media (max-width: 900px) {
+    .home-header h1 {
+      font-size: 3rem;
+    }
+    .home-header p {
+      font-size: 1.5rem;
+    }
+   
+  }
+ 
+
+@media (max-width: 768px) {
+    .home-header h1 {
+      font-size: 2rem;
+    }
+    .home-header p {
+      font-size: 0.9rem;
+    }
+    .social-icon {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .home-header h1 {
+      font-size: 1.5rem;
+    }
+    .home-header p {
+      font-size: 0.8rem;
+    }
+    .social-icon {
+      font-size: 1rem;
+    }
+  }
+ 
+</style>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo.jpg" alt="Logo" style="max-width: 50px;">
+    </div>
+    <nav>
+      <button class="burger" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skill.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+<div class="cube"></div>
+<div class="cube"></div>
+<div class="cube"></div>
+<div class="cube"></div>
+<div class="cube"></div>
+<div class="cube"></div>
+<div class="cube"></div>
+<div class="cube"></div>
+<section id="home">
+  <div class="home-header">
+    <h1>Welcome to My Portfolio</h1>
+    <p>I am Winron C. Layera, a passionate web developer and designer dedicated to crafting exceptional digital experiences. Let’s create something amazing together!</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/zeliexy"> <i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com/wynii_e/"><i class="fab fa-instagram-square"></i></a>
+      <a href="https://web.telegram.org/"><i class="fab fa-telegram-plane"></i> </a>
+  </div> 
+  </div>
+</section>
+<section id="service">  
+  <h2>Services:</h1>
+    <div class="service">
+      <center> 
+        <img src="web.jpg" alt="Web Development" class="service-image">
+        <h2>Web Development</h2>
+        <p>Building responsive and functional websites.</p>
+        <div class="button-container">
+          <button class="read-more"><a href="web.html">Read More</a></button>
+        </div>
+      </div>  
+      </center>
+    </div>
+    <div class="service">
+        <center> 
+          <img src="des.jpg" alt="Design" class="service-image">
+          <h2>Design</h2>
+          <p>Creating visually appealing designs for brands.</p>
+          <div class="button-container">
+            <button class="read-more"><a href="des.html">Read More</a></button>
+          </div>
+        </div>  
+        </center>
+      </div>
+      <div class="service">
+        <center> 
+          <img src="prog.jpg" alt="Programming" class="service-image">
+          <h2>Programming</h2>
+          <p>Implementing robust solutions and applications.</p>
+          <div class="button-container">
+            <button class="read-more"><a href="prog.html">Read More</a></button>
+          </div>
+        </div>  
+        </center>
+    </div>
+</section>
+
+<footer class="footer">
+    &copy; 2024, CTU-consolacion.
+</footer>
+</body>
+</html>
+<script>
+  const burger = document.querySelector('.burger');
+  const navMenu = document.querySelector('nav ul');
+
+  burger.addEventListener('click', () => {
+      navMenu.classList.toggle('active'); // Toggle the menu
+  });
+</script>
